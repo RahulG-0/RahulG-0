@@ -35,6 +35,18 @@
       </p>
     </td>
     <td width="50%" valign="top">
+      <h4><a href="https://github.com/MananKakkar1/CadPilot">CadPilot</a> <sub>team project</sub></h4>
+      <p>Agentic CAD: turns a written design brief into a validated, editable 3D model. I built the prompt-to-CAD agent page, the live build feed and the shared 3D viewer, with a team of four.</p>
+      <p>
+        <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+        <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+        <img alt="Gemini API" src="https://img.shields.io/badge/Gemini_API-4285F4?style=flat-square&logo=google&logoColor=white">
+        <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h4><a href="https://github.com/RahulG-0/outfit-ai">OutfitPicker</a></h4>
       <p>Outfit recommender. Embeds photos of your wardrobe with a pretrained CNN, then ranks pairings by category, colour harmony and style similarity.</p>
       <p>
@@ -44,8 +56,6 @@
         <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
       </p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/RahulG-0/vision-controlled-claw">Vision-Controlled Claw</a> <sub>work in progress</sub></h4>
       <p>Hand tracking that measures how far each finger is curled and converts it into a servo angle for a robotic claw.</p>
@@ -56,6 +66,8 @@
         <img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white">
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/RahulG-0/PA_A_SECLUDED_PLACE">A Secluded Place</a></h4>
       <p>Audio-driven horror game. You can't see the monster, so you locate it by sound and defend through a quick-time event. Built with a teammate in high school.</p>
@@ -64,10 +76,18 @@
         <img alt="Swing" src="https://img.shields.io/badge/Swing-5382A1?style=flat-square">
       </p>
     </td>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/RahulG-0/pathfinding-stuffs">Pathfinding</a></h4>
+      <p>Interactive A* visualizer. Draw a start, an end and walls on a grid, then watch the search find the shortest path.</p>
+      <p>
+        <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+        <img alt="Pygame" src="https://img.shields.io/badge/Pygame-3776AB?style=flat-square">
+      </p>
+    </td>
   </tr>
 </table>
 
-**Smaller things:** [Pathfinding](https://github.com/RahulG-0/pathfinding-stuffs), an interactive A* visualizer in Pygame, and [ML and AI experiments](https://github.com/RahulG-0/ML_and_AI), a neural network written from scratch in NumPy.
+**Also:** [ML and AI experiments](https://github.com/RahulG-0/ML_and_AI), a neural network written from scratch in NumPy.
 
 **Not public:** a Unix shell in C and a robot handwriting system on a Franka Emika arm are university projects I can't post under course policy. I'm happy to demo them.
 
