@@ -13,7 +13,7 @@ Computer Science student at the University of Toronto (class of 2027). I build s
 
 | Project | What it is | Built with |
 |---|---|---|
-| [DocFlow](https://github.com/RahulG-0/internship-prep) | Document processing pipeline: classifies PDFs, extracts fields with an LLM, validates them, applies business rules and queues exceptions for review | Python, FastAPI, Gemini API, Next.js |
+| [DocFlow](https://github.com/RahulG-0/docflow) | Document processing pipeline: classifies PDFs, extracts fields with an LLM, validates them, applies business rules and queues exceptions for review | Python, FastAPI, Gemini API, Next.js |
 | [OutfitPicker](https://github.com/RahulG-0/outfit-ai) | Outfit recommender that embeds wardrobe photos with a CNN and ranks pairings by category, colour harmony and style | TensorFlow, FastAPI, Next.js |
 | [Vision-Controlled Claw](https://github.com/RahulG-0/vision-controlled-claw) | Hand tracking that turns finger curl into servo angles for a robotic claw (work in progress) | Python, MediaPipe, OpenCV |
 | [A Secluded Place](https://github.com/RahulG-0/PA_A_SECLUDED_PLACE) | Audio-driven horror game where you locate the monster by sound | Java, Swing |
