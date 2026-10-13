@@ -15,7 +15,7 @@
 ### What I'm doing now
 
 - **Research assistant, Continuum Robotics Lab (University of Toronto).** Working on vision-language-action models for continuum robots.
-- **Co-founder, Vulpine AI.** A web-based CAD and simulation platform for robotics.
+- **Co-founder, [Vullpine](https://vullpine-waitlist.vercel.app/).** A web platform for agentic robot development, from design to simulation to deployment.
 - **Previously:** Operations Engineer & AI Developer intern at CGI, on intelligent document processing for TD.
 
 ---
