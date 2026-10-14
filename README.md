@@ -47,6 +47,29 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <h4><a href="https://github.com/RahulG-0/vision-controlled-claw">Vision-Controlled Claw</a> <sub>work in progress</sub></h4>
+      <p>Control a robotic claw with your hand. MediaPipe hand tracking measures how far each finger is curled and maps it to a servo angle. The live tracker drives a simulated five-finger claw on a 7-joint arm in ROS 2 and Gazebo, with a scripted pick-up demo. Driving the real claw's servos is in progress.</p>
+      <a href="https://github.com/RahulG-0/vision-controlled-claw"><img alt="Tracked hand skeleton and the servo angle computed for each finger" src="https://raw.githubusercontent.com/RahulG-0/vision-controlled-claw/main/docs/hand_plot.png" width="100%"></a>
+      <p>
+        <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+        <img alt="MediaPipe" src="https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=google&logoColor=white">
+        <img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white">
+        <img alt="ROS 2" src="https://img.shields.io/badge/ROS_2-22314E?style=flat-square&logo=ros&logoColor=white">
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/RahulG-0/drawbot">drawbot</a> <sub>simulation</sub></h4>
+      <p>Pen plotter arm simulated in ROS 2 Jazzy and Gazebo Harmonic. Two NEMA 17 steppers drive a two-link arm and a servo lifts the pen. Includes inverse kinematics, stepper microstepping, and a command line tool that draws shapes or any polyline you publish.</p>
+      <a href="https://github.com/RahulG-0/drawbot"><img alt="The demo sheet drawn in Gazebo" src="https://raw.githubusercontent.com/RahulG-0/drawbot/main/docs/demo.png" width="100%"></a>
+      <p>
+        <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+        <img alt="ROS 2" src="https://img.shields.io/badge/ROS_2-22314E?style=flat-square&logo=ros&logoColor=white">
+        <img alt="Gazebo" src="https://img.shields.io/badge/Gazebo-FF6F00?style=flat-square">
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h4><a href="https://github.com/RahulG-0/outfit-ai">OutfitPicker</a></h4>
       <p>Outfit recommender. Embeds photos of your wardrobe with a pretrained CNN, then ranks pairings by category, colour harmony and style similarity.</p>
       <p>
@@ -57,13 +80,11 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/RahulG-0/vision-controlled-claw">Vision-Controlled Claw</a> <sub>work in progress</sub></h4>
-      <p>Hand tracking that measures how far each finger is curled and converts it into a servo angle for a robotic claw.</p>
-      <a href="https://github.com/RahulG-0/vision-controlled-claw"><img alt="Tracked hand skeleton and the servo angle computed for each finger" src="https://raw.githubusercontent.com/RahulG-0/vision-controlled-claw/main/docs/hand_plot.png" width="100%"></a>
+      <h4><a href="https://github.com/RahulG-0/pathfinding-stuffs">Pathfinding</a></h4>
+      <p>Interactive A* visualizer. Draw a start, an end and walls on a grid, then watch the search find the shortest path.</p>
       <p>
         <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-        <img alt="MediaPipe" src="https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=google&logoColor=white">
-        <img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white">
+        <img alt="Pygame" src="https://img.shields.io/badge/Pygame-3776AB?style=flat-square">
       </p>
     </td>
   </tr>
@@ -74,14 +95,6 @@
       <p>
         <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
         <img alt="Swing" src="https://img.shields.io/badge/Swing-5382A1?style=flat-square">
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/RahulG-0/pathfinding-stuffs">Pathfinding</a></h4>
-      <p>Interactive A* visualizer. Draw a start, an end and walls on a grid, then watch the search find the shortest path.</p>
-      <p>
-        <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-        <img alt="Pygame" src="https://img.shields.io/badge/Pygame-3776AB?style=flat-square">
       </p>
     </td>
   </tr>
