@@ -14,7 +14,7 @@
 
 ### What I'm doing now
 
-- **Research assistant, Continuum Robotics Lab (University of Toronto).** Working on vision-language-action models for continuum robots.
+- **Undergraduate researcher, Continuum Robotics Lab (University of Toronto).** Training and evaluating vision-language-action models for continuum robots, and built the lab's teleoperation module.
 - **Co-founder, [Vullpine](https://vullpine-waitlist.vercel.app/).** A web platform for agentic robot development, from design to simulation to deployment.
 - **Previously:** Operations Engineer & AI Developer intern at CGI, on intelligent document processing for TD.
 
@@ -25,45 +25,45 @@
 <table>
   <tr>
     <td colspan="2" valign="top">
-      <h4>Filling in the Missing Frame in Hand-Drawn Animation</h4>
-      <p>Given two drawings from an animation, generate the one in between to double the frame rate. Animation is harder than video: outlines are a pixel or two wide, flat colour gives little to match, and parts jump far between drawings.</p>
+      <h4>Filling in the Missing Frame in Hand-Drawn Animation <sub>self-directed course research</sub></h4>
+      <p>Given two drawings from an animation, generate the one in between to double the frame rate. Animation is harder than live-action video: outlines are only a pixel or two wide, flat colour gives the model little to match, and parts of a character can jump far between drawings.</p>
       <ul>
-        <li>Adapted a published interpolator (AMT) to hand-drawn animation (ATD-12K), with per-pixel optical flow from SEA-RAFT as extra input.</li>
-        <li>Beats published AMT on unseen films, most on hard motion: <b>21.0 → 24.0 dB</b> PSNR.</li>
-        <li>Found that plain fine-tuning quietly softens lines while PSNR hides it, and that a perceptual loss term fixes it.</li>
-        <li>Evaluated with 3 seeds, paired bootstrap intervals, a line-distance metric built for animation and an unseen second source (Sakuga).</li>
-        <li>I worked across the whole project, from the motion estimator and fine-tuning to training, evaluation and the write-up.</li>
+        <li>Adapted a published frame interpolator (AMT) to hand-drawn animation (ATD-12K), adding per-pixel optical flow from SEA-RAFT as an extra input.</li>
+        <li>Outperforms the published AMT model on films it never saw in training, with the largest gain on hard motion: <b>21.0 → 24.0 dB</b> PSNR.</li>
+        <li>Found that plain fine-tuning quietly blurs line art in a way PSNR doesn't catch, and that adding a perceptual loss term fixes it.</li>
+        <li>Evaluated over 3 seeds with paired bootstrap confidence intervals, a line-distance metric designed for animation, and a held-out second source (Sakuga).</li>
+        <li>Worked across the whole project: the motion estimator, fine-tuning, training, evaluation and the write-up.</li>
       </ul>
-      <p><b>Paper:</b> coming soon &nbsp;·&nbsp; <b>Code:</b> private, <a href="mailto:rahul.gurukiran01@gmail.com">demo on request</a></p>
+      <p><b>Write-up:</b> in progress &nbsp;·&nbsp; <b>Code:</b> private, <a href="mailto:rahul.gurukiran01@gmail.com">demo on request</a></p>
       <p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"> <img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"></p>
     </td>
   </tr>
   <tr>
     <td colspan="2" valign="top">
-      <h4>Mask-Aware Metric Depth Grounding for Transparent Objects</h4>
-      <p>Depth cameras like the Intel RealSense fail on glass and clear plastic: light passes through, so the sensor reports a hole or, worse, the table behind the object. A grasp planner then reaches for a cup that isn't there. This project repairs that depth with no task-specific training, using only frozen foundation models and test-time optimization.</p>
+      <h4>Mask-Aware Metric Depth Grounding for Transparent Objects <sub>self-directed course research</sub></h4>
+      <p>Depth cameras like the Intel RealSense fail on glass and clear plastic: light passes straight through, so the sensor reports a hole or, worse, the table behind the object, and a grasp planner reaches for a cup that isn't there. This project repairs that depth without any task-specific training, using frozen foundation models and test-time optimization.</p>
       <ul>
-        <li>Zero-shot transparent-object masks from Grounding DINO and SAM 2, using text prompts like "glass" and "plastic cup"</li>
-        <li>A dense monocular depth prior from Depth Anything 3, grounded to metric scale using the trustworthy sensor pixels</li>
-        <li>Key idea: exclude the corrupted sensor readings inside the mask before alignment, applied to both a global fit and the recent AnchorD optimizer (2026)</li>
-        <li>Evaluating on TransCG (57k RGB-D images) and ClearGrasp, with oracle-mask and mask-perturbation studies to measure how segmentation quality affects depth accuracy</li>
+        <li>Segments transparent objects zero-shot with Grounding DINO and SAM 2, from text prompts such as "glass" and "plastic cup".</li>
+        <li>Uses Depth Anything 3 as a dense depth prior and scales it to real-world units using the sensor pixels that can be trusted.</li>
+        <li>Key idea: drop the corrupted sensor readings inside the mask before alignment, tested with both a global fit and the recent AnchorD optimizer (2026).</li>
+        <li>Evaluating on TransCG (57k RGB-D images) and ClearGrasp, with oracle-mask and mask-perturbation studies that measure how segmentation quality affects depth accuracy.</li>
       </ul>
-      <p><b>Paper:</b> coming soon &nbsp;·&nbsp; <b>Code:</b> private, <a href="mailto:rahul.gurukiran01@gmail.com">demo on request</a></p>
+      <p><b>Write-up:</b> in progress &nbsp;·&nbsp; <b>Code:</b> private, <a href="mailto:rahul.gurukiran01@gmail.com">demo on request</a></p>
       <p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"> <img alt="JAX" src="https://img.shields.io/badge/JAX-A8B9CC?style=flat-square"> <img alt="SciPy" src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white"></p>
     </td>
   </tr>
   <tr>
     <td colspan="2" valign="top">
-      <h4>Does Layout Matter? 2D Positional Encoding for Image-to-LaTeX</h4>
-      <p>Formulas in PDFs, slides and scanned papers are stored as images, so they can't be edited, searched or read by screen readers. This project converts a formula image into the LaTeX that renders it. Math is two-dimensional (x<sup>2</sup> and x<sub>2</sub> differ only in vertical position), and recent models add 2D positional encodings for that reason, but always alongside other changes, so no one has measured what the encoding alone contributes.</p>
+      <h4>Does Layout Matter? 2D Positional Encoding for Image-to-LaTeX <sub>self-directed course research</sub></h4>
+      <p>Formulas in PDFs, slides and scanned papers are often stored as images, so they can't be edited, searched or read by screen readers. This project converts a formula image into the LaTeX that produces it. Math is two-dimensional (x<sup>2</sup> and x<sub>2</sub> differ only in vertical position), and recent models add 2D positional encodings for that reason, but always alongside other changes, so what the encoding contributes on its own hasn't been measured.</p>
       <ul>
-        <li>CNN encoder with residual blocks that turns the image into a feature grid, and a Transformer decoder that writes LaTeX tokens while attending to it</li>
-        <li>Controlled ablation: the full model encodes each cell's row and column, the baseline is identical except for a flattened 1D index</li>
-        <li>Trained on IM2LATEX-100K (~100k arXiv formulas), scored with BLEU, token edit distance and exact match</li>
-        <li>Results broken down by structure (fractions, superscripts and subscripts, arrays) to show where layout information helps most</li>
-        <li>I built the Transformer decoder and run the training experiments</li>
+        <li>A CNN encoder with residual blocks turns the image into a feature grid, and a Transformer decoder writes LaTeX tokens while attending to it.</li>
+        <li>Controlled ablation: the full model encodes each cell's row and column, while the baseline is identical except for a flattened 1D index.</li>
+        <li>Trained on IM2LATEX-100K (about 100k arXiv formulas) and scored with BLEU, token edit distance and exact match.</li>
+        <li>Results are broken down by structure (fractions, superscripts and subscripts, arrays) to show where layout information helps most.</li>
+        <li>My part: building the Transformer decoder and running the training experiments.</li>
       </ul>
-      <p><b>Paper:</b> coming soon &nbsp;·&nbsp; <b>Code:</b> private, <a href="mailto:rahul.gurukiran01@gmail.com">demo on request</a></p>
+      <p><b>Write-up:</b> in progress &nbsp;·&nbsp; <b>Code:</b> private, <a href="mailto:rahul.gurukiran01@gmail.com">demo on request</a></p>
       <p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"></p>
     </td>
   </tr>
@@ -80,7 +80,7 @@
     </td>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/MananKakkar1/CadPilot">CadPilot</a> <sub>team project</sub></h4>
-      <p>Agentic CAD: turns a written design brief into a validated, editable 3D model. I built the prompt-to-CAD agent page, the live build feed and the shared 3D viewer, with a team of four.</p>
+      <p>Agentic CAD: turns a written design brief into a validated, editable 3D model. Placed 4th at EmberHacks. I led our team of four and built the prompt-to-CAD agent page, the live build feed and the shared 3D viewer.</p>
       <p>
         <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
         <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
